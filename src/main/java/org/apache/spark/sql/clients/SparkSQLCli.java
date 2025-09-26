@@ -64,7 +64,6 @@ public class SparkSQLCli {
                 .appName("Spark SQL Cli");
         int dataSourceCount = inputParams.getDatasources().size();
         boolean isSingleDataSource = dataSourceCount == 1;
-        System.out.println("paser args");
         for (DataSource ds : inputParams.getDatasources()) {
             String catalogName = ds.getCatalogName();
             if (isSingleDataSource) {
